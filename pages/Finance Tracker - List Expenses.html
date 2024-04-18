@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://192.168.1.10:8081/expense/list -->
+<html foxified=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://192.168.1.10:8081/favicon.ico">
+    <link media="all" type="text/css" rel="stylesheet" href="./Finance Tracker - List Expenses_files/bootstrap.css">
+    <link media="all" type="text/css" rel="stylesheet" href="./Finance Tracker - List Expenses_files/fintrack.css">
+    <script async="" src="./Finance Tracker - List Expenses_files/analytics.js"></script><script src="./Finance Tracker - List Expenses_files/jquery-1.4.2.min.js"></script>
+    <script src="./Finance Tracker - List Expenses_files/date.js"></script>
+    <script src="./Finance Tracker - List Expenses_files/fintrack.js"></script>
+    <script src="./Finance Tracker - List Expenses_files/fintrack.input.js"></script>
+<title>Finance Tracker - List Expenses</title>
+<script type="text/javascript" src="./Finance Tracker - List Expenses_files/SE_chrome.js" data-awssuidacr="i7qKU0EKsof60cF0H8h3xGvIfxp9KmY8"></script><script type="text/javascript" async="" src="./Finance Tracker - List Expenses_files/taas"></script></head>
+
+<body>
+<div class="container">
+    <div class="navbar navbar-inner">
+        <span class="navbar-text caption">Financial Tracker</span>
+        <span class="navbar-text pull-right">
+                                    Logged in as arju <a href="http://192.168.1.10:8081/logout">Logout</a>                        </span>
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="span2">
+            <ul class="nav nav-list">
+                <li data-frag="income/new"><a href="http://192.168.1.10:8081/income/new">Add income</a></li>
+                <li data-frag="income/recent"><a href="http://192.168.1.10:8081/income/recent">Recent income</a></li>
+                <li data-frag="income/list"><a href="http://192.168.1.10:8081/income/list">List income</a></li>
+                <li data-frag="expense/new"><a href="http://192.168.1.10:8081/expense/new">Add expense</a></li>
+                <li data-frag="expense/recent"><a href="http://192.168.1.10:8081/expense/recent">Recent expenses</a></li>
+                <li data-frag="expense/list" class="active"><a href="http://192.168.1.10:8081/expense/list">List expenses</a></li>
+                <li data-frag="summary"><a href="http://192.168.1.10:8081/summary">Summary</a></li>
+            </ul>
+            <div class="refinements">
+                <form method="GET" action="http://192.168.1.10:8081/expense/list" accept-charset="UTF-8" class="form-vertical"><div class="control-group">
+    <label class="control-label">Date from<br>
+        <input type="text" class="date-pick input-small" name="date_from" value="2022-08-01">
+    </label>
+    <label class="control-label">Date to<br>
+        <input type="text" class="date-pick input-small" name="date_to" value="2022-08-04">
+    </label>
+
+    <label class="control-label">Categories<br>
+                <label class="checkbox">Butas/Draud            <input title="Butas, elektra, draudimai (buto, sveikatos, bedarbystes)" name="category_ids[]" type="checkbox" value="bd">        </label>
+                <label class="checkbox">Buit.Elektr            <input title="Kompiuteriai, televizoriai, buitine technika" name="category_ids[]" type="checkbox" value="be">        </label>
+                <label class="checkbox">Hobby            <input title="Foto/video, RC, elektronika" name="category_ids[]" type="checkbox" value="hb">        </label>
+                <label class="checkbox">Ivairus            <input title="Visa kita" name="category_ids[]" type="checkbox" value="iv">        </label>
+                <label class="checkbox">Maistas            <input title="Maistas, restoranai" name="category_ids[]" type="checkbox" value="ma">        </label>
+                <label class="checkbox">Pramogos            <input title="Kinas, koncertai, spektakliai, DVD, PS zaidimai, alkoholis" name="category_ids[]" type="checkbox" value="pr">        </label>
+                <label class="checkbox">Rubai            <input title="Rubai, batai" name="category_ids[]" type="checkbox" value="rb">        </label>
+                <label class="checkbox">Reg.Mokesciai            <input title="Mokykla, dagis, veckopeng, siggepeng, radiotjänst" name="category_ids[]" type="checkbox" value="rm">        </label>
+                <label class="checkbox">Telef/Intern            <input title="Telefono mokesciai, korteles papildymas" name="category_ids[]" type="checkbox" value="ti">        </label>
+                <label class="checkbox">Transportas            <input title="SL bilietai, taxi, keliones i LT" name="category_ids[]" type="checkbox" value="tr">        </label>
+                <label class="checkbox">Zaislai/Dovanos            <input title="Zaislai vaikams, dovanos, lauktuves" name="category_ids[]" type="checkbox" value="zd">        </label>
+            </label>
+    <label class="control-label">User<br>
+        <select class="input-medium sidebar-limited" name="user_id"><option value="0" selected="selected">--- select ---</option><option value="1">arju</option><option value="2">zuikyte</option></select>    </label>
+</div>
+<div class="controls">
+    <input class="btn btn-small btn-primary" type="submit" value="Refresh">    <input class="btn btn-small" type="reset" value="Reset"></div>
+</form>            </div>
+        </div>
+        <div class="span10">
+            <table class="table table-bordered table-striped table-condensed">
+    <tbody><tr class="row-padded">
+        <th class="text-left">Date</th>
+        <th class="text-left">Amount</th>
+        <th class="text-left">Category</th>
+        <th class="text-left">Description</th>
+        <th class="text-left">User</th>
+        <th class="text-left">Edit</th>
+        <th class="text-left">Delete</th>
+    </tr>
+        <tr class="row-padded">
+        <td class="text-left">2022-08-03</td>
+        <td class="text-rigth">2750.00</td>
+        <td class="text-left">Butas/Draud</td>
+        <td class="text-left">sbab</td>
+        <td class="text-left">arju</td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/list/17097/edit" class="btn btn-mini">Edit</a></td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/17097/delete" class="btn btn-mini btn-danger confirmation">Delete</a></td>
+    </tr>
+        <tr class="row-padded">
+        <td class="text-left">2022-08-03</td>
+        <td class="text-rigth">2586.00</td>
+        <td class="text-left">Butas/Draud</td>
+        <td class="text-left">sbab</td>
+        <td class="text-left">arju</td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/list/17098/edit" class="btn btn-mini">Edit</a></td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/17098/delete" class="btn btn-mini btn-danger confirmation">Delete</a></td>
+    </tr>
+        <tr class="row-padded">
+        <td class="text-left">2022-08-03</td>
+        <td class="text-rigth">1700.00</td>
+        <td class="text-left">Ivairus</td>
+        <td class="text-left">vp</td>
+        <td class="text-left">arju</td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/list/17099/edit" class="btn btn-mini">Edit</a></td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/17099/delete" class="btn btn-mini btn-danger confirmation">Delete</a></td>
+    </tr>
+        <tr class="row-padded">
+        <td class="text-left">2022-08-03</td>
+        <td class="text-rigth">38.00</td>
+        <td class="text-left">Ivairus</td>
+        <td class="text-left">lp 2st</td>
+        <td class="text-left">arju</td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/list/17100/edit" class="btn btn-mini">Edit</a></td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/17100/delete" class="btn btn-mini btn-danger confirmation">Delete</a></td>
+    </tr>
+        <tr class="row-padded">
+        <td class="text-left">2022-08-03</td>
+        <td class="text-rigth">1620.00</td>
+        <td class="text-left">Maistas</td>
+        <td class="text-left"></td>
+        <td class="text-left">arju</td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/list/17101/edit" class="btn btn-mini">Edit</a></td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/17101/delete" class="btn btn-mini btn-danger confirmation">Delete</a></td>
+    </tr>
+        <tr class="row-padded">
+        <td class="text-left">2022-08-03</td>
+        <td class="text-rigth">104.00</td>
+        <td class="text-left">Ivairus</td>
+        <td class="text-left">tradera</td>
+        <td class="text-left">arju</td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/list/17102/edit" class="btn btn-mini">Edit</a></td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/17102/delete" class="btn btn-mini btn-danger confirmation">Delete</a></td>
+    </tr>
+        <tr class="row-padded">
+        <td class="text-left">2022-08-03</td>
+        <td class="text-rigth">280.00</td>
+        <td class="text-left">Pramogos</td>
+        <td class="text-left">bowling</td>
+        <td class="text-left">arju</td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/list/17103/edit" class="btn btn-mini">Edit</a></td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/17103/delete" class="btn btn-mini btn-danger confirmation">Delete</a></td>
+    </tr>
+        <tr class="row-padded">
+        <td class="text-left">2022-08-03</td>
+        <td class="text-rigth">99.00</td>
+        <td class="text-left">Ivairus</td>
+        <td class="text-left">hdmi dvi adapter</td>
+        <td class="text-left">arju</td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/list/17104/edit" class="btn btn-mini">Edit</a></td>
+        <td class="text-left"><a href="http://192.168.1.10:8081/expense/17104/delete" class="btn btn-mini btn-danger confirmation">Delete</a></td>
+    </tr>
+    </tbody></table>
+<br>
+        </div>
+    </div>
+</div>
+
+
+<iframe src="./Finance Tracker - List Expenses_files/saved_resource.html" style="display: none;"></iframe></body></html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://192.168.1.10:8081/expense/new -->
+<html foxified=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://192.168.1.10:8081/favicon.ico">
+    <link media="all" type="text/css" rel="stylesheet" href="./Finance Tracker - New Expense_files/bootstrap.css">
+    <link media="all" type="text/css" rel="stylesheet" href="./Finance Tracker - New Expense_files/fintrack.css">
+    <script async="" src="./Finance Tracker - New Expense_files/analytics.js"></script><script src="./Finance Tracker - New Expense_files/jquery-1.4.2.min.js"></script>
+    <script src="./Finance Tracker - New Expense_files/date.js"></script>
+    <script src="./Finance Tracker - New Expense_files/fintrack.js"></script>
+    <script src="./Finance Tracker - New Expense_files/fintrack.input.js"></script>
+<title>Finance Tracker - New Expense</title>
+<script type="text/javascript" src="./Finance Tracker - New Expense_files/SE_chrome.js" data-awssuidacr="i7qKU0EKsof60cF0H8h3xGvIfxp9KmY8"></script><script type="text/javascript" async="" src="./Finance Tracker - New Expense_files/taas"></script></head>
+
+<body>
+<div class="container">
+    <div class="navbar navbar-inner">
+        <span class="navbar-text caption">Financial Tracker</span>
+        <span class="navbar-text pull-right">
+                                    Logged in as arju <a href="http://192.168.1.10:8081/logout">Logout</a>                        </span>
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="span2">
+            <ul class="nav nav-list">
+                <li data-frag="income/new"><a href="http://192.168.1.10:8081/income/new">Add income</a></li>
+                <li data-frag="income/recent"><a href="http://192.168.1.10:8081/income/recent">Recent income</a></li>
+                <li data-frag="income/list"><a href="http://192.168.1.10:8081/income/list">List income</a></li>
+                <li data-frag="expense/new" class="active"><a href="http://192.168.1.10:8081/expense/new">Add expense</a></li>
+                <li data-frag="expense/recent"><a href="http://192.168.1.10:8081/expense/recent">Recent expenses</a></li>
+                <li data-frag="expense/list"><a href="http://192.168.1.10:8081/expense/list">List expenses</a></li>
+                <li data-frag="summary"><a href="http://192.168.1.10:8081/summary">Summary</a></li>
+            </ul>
+            <div class="refinements">
+                            </div>
+        </div>
+        <div class="span10">
+            <form method="POST" action="http://192.168.1.10:8081/expense/save" accept-charset="UTF-8" class="form-horizontal"><input name="_token" type="hidden" value="chww6LpX2xAlVS4Ito9rgeJYExpa6ZaOgv9Hesce">    <div class="control-group">
+        <label class="control-label">Date</label>
+        <div class="controls">
+            <input type="text" class="date-pick input-small" name="create_date" value="2022-08-04">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Category</label>
+        <div class="controls">
+                        <label class="radio">Butas/Draudimas                <input title="Butas, elektra, draudimai (buto, sveikatos, bedarbystes)" name="category_id" type="radio" value="bd">            </label>
+                        <label class="radio">Buitine Elektronika                <input title="Kompiuteriai, televizoriai, buitine technika" name="category_id" type="radio" value="be">            </label>
+                        <label class="radio">Hobby                <input title="Foto/video, RC, elektronika" name="category_id" type="radio" value="hb">            </label>
+                        <label class="radio">Ivairus                <input title="Visa kita" name="category_id" type="radio" value="iv">            </label>
+                        <label class="radio">Maistas                <input title="Maistas, restoranai" name="category_id" type="radio" value="ma">            </label>
+                        <label class="radio">Pramogos                <input title="Kinas, koncertai, spektakliai, DVD, PS zaidimai, alkoholis" name="category_id" type="radio" value="pr">            </label>
+                        <label class="radio">Rubai                <input title="Rubai, batai" name="category_id" type="radio" value="rb">            </label>
+                        <label class="radio">Regularus Mokesciai                <input title="Mokykla, dagis, veckopeng, siggepeng, radiotjänst" name="category_id" type="radio" value="rm">            </label>
+                        <label class="radio">Telefonas/Internetas                <input title="Telefono mokesciai, korteles papildymas" name="category_id" type="radio" value="ti">            </label>
+                        <label class="radio">Transportas                <input title="SL bilietai, taxi, keliones i LT" name="category_id" type="radio" value="tr">            </label>
+                        <label class="radio">Zaislai/Dovanos                <input title="Zaislai vaikams, dovanos, lauktuves" name="category_id" type="radio" value="zd">            </label>
+                    </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Amount</label>
+        <div class="controls">
+            <input type="text" name="amount" class="focus" value="" size="12">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Description</label>
+        <div class="controls">
+            <textarea name="descr" cols="30" rows="5"></textarea>
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <input class="btn btn-small btn-primary" type="submit" value="Save">            <input class="btn btn-small" type="reset" value="Reset">        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+                                </div>
+    </div>
+</form>        </div>
+    </div>
+</div>
+
+
+<iframe src="./Finance Tracker - New Expense_files/saved_resource.html" style="display: none;"></iframe></body></html>

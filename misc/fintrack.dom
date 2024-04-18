@@ -1,0 +1,8 @@
+<VirtualHost www.fintrack.com:80>
+   ServerName www.fintrack.com
+   DocumentRoot /srv/http/fintrack/public
+   <Directory /srv/http/fintrack/public>
+	    AllowOverride all
+   </Directory>
+</VirtualHost>
+

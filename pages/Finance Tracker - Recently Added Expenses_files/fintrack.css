@@ -1,0 +1,60 @@
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.sidebar-limited {
+    width:  140px !important;
+}
+
+.row-padded td {
+    padding: 2px 4px !important;
+}
+
+.span2 ul {
+    border:1px solid #dddddd !important;
+    border-radius: 4px;
+}
+
+.span2 hr {
+    margin: 10px 0px !important;
+}
+
+.pagination {
+    margin: 0px 0px 3px !important;
+}
+
+.control-label {
+    font-weight: bold;
+}
+
+.refinements {
+    margin-top: 10px !important;
+}
+
+.navbar {
+    margin: 5px 0px 15px !important;
+}
+
+.nav li a {
+    padding: 3px 10px !important;
+}
+
+span.caption {
+    font-size: 22px;
+}
+
+.error {
+    color:					#ff3333;
+}
+
+.message {
+    color:					#000000;
+}

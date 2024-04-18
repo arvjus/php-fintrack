@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://192.168.1.10:8081/summary -->
+<html foxified=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://192.168.1.10:8081/favicon.ico">
+    <link media="all" type="text/css" rel="stylesheet" href="./Finance Tracker - Summary_files/bootstrap.css">
+    <link media="all" type="text/css" rel="stylesheet" href="./Finance Tracker - Summary_files/fintrack.css">
+    <script async="" src="./Finance Tracker - Summary_files/analytics.js"></script><script src="./Finance Tracker - Summary_files/jquery-1.4.2.min.js"></script>
+    <script src="./Finance Tracker - Summary_files/date.js"></script>
+    <script src="./Finance Tracker - Summary_files/fintrack.js"></script>
+    <link media="all" type="text/css" rel="stylesheet" href="./Finance Tracker - Summary_files/jquery.jqplot.css">
+<script src="./Finance Tracker - Summary_files/jquery.jqplot.min.js"></script>
+<script src="./Finance Tracker - Summary_files/jqplot.categoryAxisRenderer.min.js"></script>
+<script src="./Finance Tracker - Summary_files/jqplot.barRenderer.min.js"></script>
+<script src="./Finance Tracker - Summary_files/fintrack.summary.js"></script>
+<title>Finance Tracker - Summary</title>
+<script type="text/javascript" src="./Finance Tracker - Summary_files/SE_chrome.js" data-awssuidacr="i7qKU0EKsof60cF0H8h3xGvIfxp9KmY8"></script><script type="text/javascript" async="" src="./Finance Tracker - Summary_files/taas"></script></head>
+
+<body>
+<div class="container">
+    <div class="navbar navbar-inner">
+        <span class="navbar-text caption">Financial Tracker</span>
+        <span class="navbar-text pull-right">
+                                    Logged in as arju <a href="http://192.168.1.10:8081/logout">Logout</a>                        </span>
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="span2">
+            <ul class="nav nav-list">
+                <li data-frag="income/new"><a href="http://192.168.1.10:8081/income/new">Add income</a></li>
+                <li data-frag="income/recent"><a href="http://192.168.1.10:8081/income/recent">Recent income</a></li>
+                <li data-frag="income/list"><a href="http://192.168.1.10:8081/income/list">List income</a></li>
+                <li data-frag="expense/new"><a href="http://192.168.1.10:8081/expense/new">Add expense</a></li>
+                <li data-frag="expense/recent"><a href="http://192.168.1.10:8081/expense/recent">Recent expenses</a></li>
+                <li data-frag="expense/list"><a href="http://192.168.1.10:8081/expense/list">List expenses</a></li>
+                <li data-frag="summary" class="active"><a href="http://192.168.1.10:8081/summary">Summary</a></li>
+            </ul>
+            <div class="refinements">
+                <form method="GET" action="http://192.168.1.10:8081/summary" accept-charset="UTF-8" class="form-vertical"><div class="control-group">
+    <label class="control-label">Date from<br>
+        <input type="text" class="date-pick input-small" name="date_from" value="2022-01-01">
+    </label>
+    <label class="control-label">Date to<br>
+        <input type="text" class="date-pick input-small" name="date_to" value="2022-08-04">
+    </label>
+    <label class="control-label">Categories<br>
+        <label class="checkbox">Income
+            <input name="income_selected" type="checkbox" value="1">        </label>
+                <label class="checkbox">Butas/Draud            <input title="Butas, elektra, draudimai (buto, sveikatos, bedarbystes)" name="category_ids[]" type="checkbox" value="bd">        </label>
+                <label class="checkbox">Buit.Elektr            <input title="Kompiuteriai, televizoriai, buitine technika" name="category_ids[]" type="checkbox" value="be">        </label>
+                <label class="checkbox">Hobby            <input title="Foto/video, RC, elektronika" name="category_ids[]" type="checkbox" value="hb">        </label>
+                <label class="checkbox">Ivairus            <input title="Visa kita" name="category_ids[]" type="checkbox" value="iv">        </label>
+                <label class="checkbox">Maistas            <input title="Maistas, restoranai" name="category_ids[]" type="checkbox" value="ma">        </label>
+                <label class="checkbox">Pramogos            <input title="Kinas, koncertai, spektakliai, DVD, PS zaidimai, alkoholis" name="category_ids[]" type="checkbox" value="pr">        </label>
+                <label class="checkbox">Rubai            <input title="Rubai, batai" name="category_ids[]" type="checkbox" value="rb">        </label>
+                <label class="checkbox">Reg.Mokesciai            <input title="Mokykla, dagis, veckopeng, siggepeng, radiotjänst" name="category_ids[]" type="checkbox" value="rm">        </label>
+                <label class="checkbox">Telef/Intern            <input title="Telefono mokesciai, korteles papildymas" name="category_ids[]" type="checkbox" value="ti">        </label>
+                <label class="checkbox">Transportas            <input title="SL bilietai, taxi, keliones i LT" name="category_ids[]" type="checkbox" value="tr">        </label>
+                <label class="checkbox">Zaislai/Dovanos            <input title="Zaislai vaikams, dovanos, lauktuves" name="category_ids[]" type="checkbox" value="zd">        </label>
+            </label>
+    <label class="control-label">Report<br>
+        <label class="radio">By categories
+            <input checked="checked" name="groupped_by" type="radio" value="categories">        </label>
+        <label class="radio">By months
+            <input name="groupped_by" type="radio" value="months">        </label>
+        <label class="checkbox">Plot chart
+            <input name="plot_chart" type="checkbox" value="1">        </label>
+    </label>
+</div>
+<div class="controls">
+    <input class="btn btn-small btn-primary" type="submit" value="Refresh">    <input class="btn btn-small" type="reset" value="Reset"></div>
+</form>            </div>
+        </div>
+        <div class="span10">
+            <table class="table table-bordered table-striped table-condensed">
+    <tbody><tr class="row-padded">
+        <th class="text-left">Incomes</th>
+        <th class="text-left">Count</th>
+        <th class="text-left">Amount</th>
+        <th class="text-left">Expenses</th>
+        <th class="text-left">Count</th>
+        <th class="text-left">Amount</th>
+    </tr>
+    <tr class="total_values row-padded">
+        <td class="text-left">Total</td>
+        <td class="text-right">41</td>
+        <td class="text-right">290438.00</td>
+        <td class="text-left">Total</td>
+        <td class="text-right">253</td>
+        <td class="text-right">265171.00</td>
+    </tr>
+</tbody></table>
+<br>
+        <br>
+    <table class="table table-bordered table-striped table-condensed">
+        <tbody><tr>
+            <th class="text-left">Category</th>
+            <th class="text-left">Count</th>
+            <th class="text-left">Amount</th>
+        </tr>
+                    <tr class="category_values">
+                <td class="text-left">Buitine Elektronika</td>
+                <td class="text-left">2</td>
+                <td class="text-right">2869.00</td>
+            </tr>
+                    <tr class="category_values">
+                <td class="text-left">Butas/Draudimas</td>
+                <td class="text-left">41</td>
+                <td class="text-right">67120.00</td>
+            </tr>
+                    <tr class="category_values">
+                <td class="text-left">Hobby</td>
+                <td class="text-left">10</td>
+                <td class="text-right">5447.00</td>
+            </tr>
+                    <tr class="category_values">
+                <td class="text-left">Ivairus</td>
+                <td class="text-left">103</td>
+                <td class="text-right">131922.00</td>
+            </tr>
+                    <tr class="category_values">
+                <td class="text-left">Maistas</td>
+                <td class="text-left">67</td>
+                <td class="text-right">43302.00</td>
+            </tr>
+                    <tr class="category_values">
+                <td class="text-left">Pramogos</td>
+                <td class="text-left">3</td>
+                <td class="text-right">900.00</td>
+            </tr>
+                    <tr class="category_values">
+                <td class="text-left">Rubai</td>
+                <td class="text-left">9</td>
+                <td class="text-right">5085.00</td>
+            </tr>
+                    <tr class="category_values">
+                <td class="text-left">Transportas</td>
+                <td class="text-left">18</td>
+                <td class="text-right">8526.00</td>
+            </tr>
+            </tbody></table>
+        </div>
+    </div>
+</div>
+
+
+<iframe src="./Finance Tracker - Summary_files/saved_resource.html" style="display: none;"></iframe></body></html>
