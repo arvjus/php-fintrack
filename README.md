@@ -14,13 +14,13 @@ Copyright © 2014 Arvid Juskaitis <arvydas.juskaitis@gmail.com>
 
 Click to view.
 
-[![List expenses](https://raw.githubusercontent.com/arvjus/fintrack/master/screenshots/list-expenses-thumb.png)](https://raw.githubusercontent.com/arvjus/fintrack/master/screenshots/list-expenses.png)
+[![List expenses](https://raw.githubusercontent.com/arvjus/php-fintrack/master/screenshots/list-expenses-thumb.png)](https://raw.githubusercontent.com/arvjus/php-fintrack/master/screenshots/list-expenses.png)
 
-[![Show summary](https://raw.githubusercontent.com/arvjus/fintrack/master/screenshots/summary-thumb.png)](https://raw.githubusercontent.com/arvjus/fintrack/master/screenshots/summary.png)
+[![Show summary](https://raw.githubusercontent.com/arvjus/php-fintrack/master/screenshots/summary-thumb.png)](https://raw.githubusercontent.com/arvjus/php-fintrack/master/screenshots/summary.png)
 
-[![Add new income](https://raw.githubusercontent.com/arvjus/fintrack/master/screenshots/add-income-thumb.png)](https://raw.githubusercontent.com/arvjus/fintrack/master/screenshots/add-income.png)
+[![Add new income](https://raw.githubusercontent.com/arvjus/php-fintrack/master/screenshots/add-income-thumb.png)](https://raw.githubusercontent.com/arvjus/php-fintrack/master/screenshots/add-income.png)
 
-[![Add new expense](https://raw.githubusercontent.com/arvjus/fintrack/master/screenshots/add-expense-thumb.png)](https://raw.githubusercontent.com/arvjus/fintrack/master/screenshots/add-expense.png)
+[![Add new expense](https://raw.githubusercontent.com/arvjus/php-fintrack/master/screenshots/add-expense-thumb.png)](https://raw.githubusercontent.com/arvjus/php-fintrack/master/screenshots/add-expense.png)
 
 
 ### Prerequisites
